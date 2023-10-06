@@ -30,6 +30,7 @@ const CheckOut: React.FC = () => {
   //   register("amount")
   // };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     validBox();
   }, []);

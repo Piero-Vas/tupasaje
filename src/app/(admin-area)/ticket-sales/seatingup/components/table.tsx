@@ -7,11 +7,12 @@ import {_} from 'gridjs-react';
 import {esES} from 'gridjs/l10n';
 import { useAppDispatch, useAppSelector } from '@/redux/hooks'
 import { selectItinerarie } from "@/redux/features/selectItinerarieSlice";
+import { useId } from 'react';
 
 
 const TableItinerariesChange: React.FC = () => {
   let cooktoken = Cookies.get('token');
-
+  const uniqueId = useId();
   const dispatch = useAppDispatch()
 
   const destination = useAppSelector((state) => state.ItinerarySelected.cityDestinationValue)
@@ -59,7 +60,7 @@ const TableItinerariesChange: React.FC = () => {
           
                 <div>
                   {itineraries.prices.specifics.map((e: { f: any })=>{
-                          return <div className="font-bold">
+                          return <div key={uniqueId+'1'}  className="font-bold">
                           PISO {e.f} <span className="font-bold"></span>
                         </div>
                         })}
