@@ -1,0 +1,48 @@
+{
+  "name": "tu-pasaje",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@hookform/resolvers": "^3.2.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@svgr/webpack": "^8.0.1",
+    "axios": "^1.4.0",
+    "axios-hooks": "^4.0.0",
+    "clsx": "^2.0.0",
+    "gridjs": "^6.0.6",
+    "gridjs-react": "^6.0.1",
+    "js-cookie": "^3.0.5",
+    "next": "13.4.13",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.4",
+    "react-icons": "^4.10.1",
+    "react-redux": "^8.1.2",
+    "sweetalert2": "^11.7.20",
+    "swr": "^2.2.0",
+    "tailwind-merge": "^1.14.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.5.1",
+    "@types/js-cookie": "^3.0.3",
+    "@types/node": "20.4.8",
+    "@types/react": "18.2.19",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.14",
+    "daisyui": "^3.5.1",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.13",
+    "postcss": "8.4.27",
+    "react-html-props": "^2.0.3",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  }
+}
