@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  distDir: 'build',
   env: {
     API_URL: 'http://3.14.43.44:4567',
     TOKEN:
