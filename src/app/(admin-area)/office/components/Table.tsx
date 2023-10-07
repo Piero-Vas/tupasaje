@@ -22,7 +22,7 @@ const TableOffice: React.FC = () => {
     },
   );
   const router = useRouter();
-  const cooktoken = Cookies.get('token');
+  let cooktoken = Cookies.get('token');
 
   const deleteOffice = async (id: number) => {
     Swal.fire({
