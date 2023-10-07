@@ -3,6 +3,7 @@ import { Grid } from 'gridjs-react';
 // import "gridjs/dist/theme/mermaid.css";
 import Cookies from 'js-cookie';
 import { _ } from 'gridjs-react';
+// @ts-ignore
 import { esES } from 'gridjs/l10n';
 import { BiTrash } from 'react-icons/bi';
 import { HiOutlinePencil } from 'react-icons/hi';
@@ -108,7 +109,7 @@ const TableIPayments: React.FC = () => {
 			// 	},
 			// }}
 			data={
-				dataCustomer.map((e)=>{
+				dataCustomer.map((e:{name:any, document:any})=>{
 					return  [e.name , e.document, 1, '',totalSteats*30];
 				})
 				// ['John', 'john@example.com'],

@@ -34,7 +34,7 @@ const DataCustomer: React.FC = () => {
     Array(numFormularios).fill({ name: '', document: '',document_type:'DNI' })
   );
 
-  const handleInputChange = (event, index) => {
+  const handleInputChange = (event:any, index:any) => {
     const { name, value } = event.target;
     const nuevosDatos = [...datosFormularios];
     nuevosDatos[index] = {
@@ -44,7 +44,7 @@ const DataCustomer: React.FC = () => {
     setDatosFormularios(nuevosDatos);
   };
   let dispatch = useAppDispatch()
-  const enviarTodosLosDatos = (event) => {
+  const enviarTodosLosDatos = (event:any) => {
     event.preventDefault();
     dispatch(changeDataCustomer(datosFormularios));
     router.push('/ticket-sales/payment');

@@ -7,7 +7,7 @@ const FormulariosMultiples = () => {
     Array(numFormularios).fill({ nombre: '', email: '' })
   );
 
-  const handleInputChange = (event, index) => {
+  const handleInputChange = (event:any, index:any) => {
     const { name, value } = event.target;
     const nuevosDatos = [...datosFormularios];
     nuevosDatos[index] = {
@@ -17,7 +17,7 @@ const FormulariosMultiples = () => {
     setDatosFormularios(nuevosDatos);
   };
 
-  const enviarTodosLosDatos = (event) => {
+  const enviarTodosLosDatos = (event:any) => {
     event.preventDefault();
     console.log('Datos de todos los formularios:', datosFormularios);
   };

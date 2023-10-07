@@ -70,7 +70,7 @@ const validateRoutes = (routes: Route[]): boolean => {
   return true;
 };
 
-export const CreateRoutePage = () => {
+ const CreateRoutePage = () => {
   const [routes, setRoutes] = useState<Route[]>(INITIAL_ROUTES_STATE);
   const uniqueId = useId();
   const router = useRouter();

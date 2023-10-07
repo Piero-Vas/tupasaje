@@ -2,6 +2,7 @@
 import React, {useState} from 'react';
 import {FaPlus} from 'react-icons/fa';
 import {Grid} from 'gridjs-react';
+// @ts-ignore
 import {esES} from 'gridjs/l10n';
 import {BiTrash} from 'react-icons/bi';
 import {HiOutlinePencil} from 'react-icons/hi';

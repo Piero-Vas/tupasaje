@@ -56,7 +56,7 @@ const Payment: React.FC = () => {
     },
   );
 
-  const handleInputChange = (event, index) => {
+  const handleInputChange = (event:any, index:any) => {
     const { name, value } = event.target;
     const nuevosDatos = [...datosFormularios];
     nuevosDatos[index] = {
@@ -66,9 +66,7 @@ const Payment: React.FC = () => {
     setFormularios(nuevosDatos);
   };
 
-  const handleCreateNewBookingSubmit = async (
-    e: React.FormEvent<HTMLFormElement>,
-  ) => {
+  const handleCreateNewBookingSubmit = async () => {
     
     console.log('Datos de todos los formularios:', datosFormularios);
     let seats= [{
