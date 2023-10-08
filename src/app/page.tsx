@@ -1,6 +1,6 @@
 'use client';
 
-import {useId} from 'react';
+import {useEffect, useId} from 'react';
 import {useRouter} from 'next/navigation';
 import {useBoolean} from '@/global-hooks/useBoolean';
 import {useLoginForm} from '@/forms/login.form';
@@ -14,6 +14,14 @@ import {AuthLayout} from '@/layouts/AuthLayout';
 import {HOUR_TOKEN, NODE_ENV} from '@/config/env';
 
 export default function LoginPage() {
+  useEffect(() => {
+    Cookies.set('token', '');
+  
+    return () => {
+    }
+  }, [])
+  
+ 
   const uniqueId = useId();
   const {value: isPasswordVisible, toggle: togglePasswordVisibility} =
     useBoolean(false);

@@ -6,7 +6,8 @@ export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
   // there is not token and route is ´/´ or ´/forgot-password´
-  if (!tokenCookie && (pathname === '/' || pathname === '/forgot-password')) {
+  if ((pathname === '/' || pathname === '/forgot-password')) {
+    console.log("----")
     return NextResponse.next();
   }
 
